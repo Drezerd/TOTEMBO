@@ -1,0 +1,116 @@
+@media(max-width:1354px) {
+    .sales__div {
+        /* grid-template-columns: repeat(3, 1fr); */
+        row-gap: 30px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    /* .grand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 526px;
+            height: 350px;
+            margin-top: 0;
+            padding: 40px 0 0 0;
+        }     */
+    .clock {
+        padding-right: 0;
+    }
+
+    .header__a::after {
+        background: #000000;
+    }
+
+    .header__a::before {
+        background: #000000;
+    }
+
+    .grand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #E1E1E1;
+        border-radius: 10px;
+        margin-top: 40px;
+        flex-direction: column;
+        row-gap: 65px;
+        column-gap: -5px;
+        position: relative;
+        grid-area: grand;
+    }
+}
+
+@media(max-width:1058px) {
+
+    .sales {
+        padding: 73px 0 47px 0;
+        flex-direction: column;
+        gap: 21px;
+    }
+
+    .sale {
+        padding-left: 0;
+    }
+
+    .swiss {
+        flex-direction: column;
+        padding: 73px 0 47px 0;
+        row-gap: 30px;
+    }
+
+    .grand {
+        padding: 0 0 0 0;
+    }
+
+    .grans__img {
+        object-fit: scale-down;
+        width: 100%;
+    }
+}
+
+@media(max-width:1058px) {
+    .sales__div {
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+    }
+}
+
+@media(max-width:750px) {
+    .sales__div {
+        grid-template-areas: "sale"
+            "swiss"
+            "grand ";
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grans__img {
+        height: 234px;
+        padding-top: 84px;
+    }
+    .grans__sale {
+        padding-left: 0px;
+        gap: 29px;
+        padding-bottom: 30px;
+    }
+    .sales__div{
+        padding-top: -30px;
+    }
+    .grand{
+        margin: 0;
+    }
+
+}
+
+@media(max-width:640px) {
+    .header__ul {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
