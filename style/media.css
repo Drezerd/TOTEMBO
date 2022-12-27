@@ -30,6 +30,12 @@
     .header__a::before {
         background: #000000;
     }
+    .header__a:hover::after {
+        transform: scaleX(1);
+    }
+    .header__a:hover::before{
+        transform: scaleX(0);
+    } 
 
     .grand {
         display: flex;
@@ -72,9 +78,7 @@
         object-fit: scale-down;
         width: 100%;
     }
-}
 
-@media(max-width:1058px) {
     .sales__div {
         grid-template-columns: repeat(2, 1fr);
         /* grid-template-rows: repeat(2, 1fr); */
@@ -85,8 +89,40 @@
         /* justify-content: center; */
 
     }
+    .advicee{
+        max-width: 636px;
+        width: 100%;
+       grid-template-rows: 470px 470px;
+       grid-template-columns: 1fr;
+       grid-template-areas: "ad" "ad1";
+    }
+.div__footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.footer__ul {
+    text-align: center;
+}
+.last__p__1 {
+    margin: 0 auto;
+}
+.last__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+.last__icons {
+    justify-content: center;
+}
+.footer {
+    padding: 50px 0 30px 0;
 }
 
+
+}
 @media(max-width:750px) {
     .sales__div {
         grid-template-areas: "sale"
@@ -131,5 +167,54 @@
       width: 100%;
       max-width: initial;
     }
-
+}
+@media(max-width:520px) {
+    .advice__text {
+        text-align: center;
+        font-family: 'MR';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        font-variant: small-caps;
+        color: #E1E1E1;
+        max-width: 290px;
+        margin: 0 auto;
+    }
+    .advice__h2 {
+        font-family: 'MB';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: #FFFFFF;
+        font-variant: small-caps;
+        width: 290px;
+        text-align: center;
+    }
+    .advices {
+        padding-top: 95px;
+        background: url(../img/Rectangle\ 89.png) center center / cover;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+        justify-content: center;
+        width: 100%; 
+    }
+    .date__1{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: 'MR';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+color: #FFFFFF;
+align-self: flex-start;
+padding-bottom: 0px;
+padding-left: 20px;
+}
 }
