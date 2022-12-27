@@ -79,6 +79,12 @@
         grid-template-columns: repeat(2, 1fr);
         /* grid-template-rows: repeat(2, 1fr); */
     }
+
+    .clock__block {
+        grid-template-columns: repeat(1, 1fr);
+        /* justify-content: center; */
+
+    }
 }
 
 @media(max-width:750px) {
@@ -88,19 +94,23 @@
             "grand ";
         grid-template-columns: repeat(1, 1fr);
     }
+
     .grans__img {
         height: 234px;
         padding-top: 84px;
     }
+
     .grans__sale {
         padding-left: 0px;
         gap: 29px;
         padding-bottom: 30px;
     }
-    .sales__div{
+
+    .sales__div {
         padding-top: -30px;
     }
-    .grand{
+
+    .grand {
         margin: 0;
     }
 
@@ -113,4 +123,13 @@
         flex-direction: column;
         align-items: center;
     }
+    .clock__card{
+        max-width: initial;
+        padding: 72px 55px 39px 55px;
+    }
+    .mini__card{
+      width: 100%;
+      max-width: initial;
+    }
+
 }
